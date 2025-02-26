@@ -2,13 +2,13 @@
   background-color: #bb38a6;
   color: white;
   padding: 20px 0;
-  text-align: left; /* Выравниваем текст слева */
+  text-align: left;
 }
 
 .footer-container {
   background-color: #bb38a6;
   display: flex;
-  justify-content: space-between; /* Распределяем элементы по краям */
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -20,37 +20,43 @@
 
 .footer-social {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end; /* Выравниваем иконки справа */
-  margin-right: 20px; /* Добавляем отступ справа */
-}
-
-.footer-item {
-  margin: 5px 0;
-  display: flex;
   align-items: center;
 }
 
-.footer-item i {
-  margin-right: 5px;
+.list-in-line {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.social-logo {
-  width: 16px;
-  height: 16px;
-  margin-right: 3px;
+.list-in-line li {
+  display: inline;
+  padding: 0 10px;
+}
+
+.list-in-line i {
+  font-size: 16px;
+  color: white;
+}
+
+.list-in-line i:hover {
+  color: black;
 }
 
 /* Медиа-запрос для экранов шириной менее 700px */
 @media (max-width: 700px) {
   .footer-container {
-    flex-direction: column; /* Располагаем элементы в столбик */
-    align-items: flex-start; /* Выравниваем текст слева */
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .footer-social {
-    align-items: flex-end; /* Выравниваем иконки справа */
-    margin-right: 0; /* Убираем отступ справа */
-    margin-top: 20px; /* Добавляем отступ сверху */
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  .list-in-line li {
+    display: block;
+    padding: 5px 0;
   }
 }
