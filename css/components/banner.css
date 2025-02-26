@@ -1,0 +1,36 @@
+.banner {
+  width: auto; /* Баннер занимает 50% ширины */
+  height: 500px; /* Задайте нужную высоту баннера */
+  position: relative;
+  overflow: hidden; /* Скрываем все, что выходит за границы баннера */
+  background-position: center;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6); /* Затемнение изображения */
+  z-index: 0;
+   background-image: url('../../images/background.jpg');
+  
+}
+
+.banner .container {
+  position: relative; /* Для позиционирования текста поверх изображения */
+  z-index: 1; /* Размещаем текст над изображением */
+  text-align: center;
+  color: white; /* Цвет текста */
+  padding: 100px 20px; /* Отступы для текста */
+}
+.banner h2 {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+

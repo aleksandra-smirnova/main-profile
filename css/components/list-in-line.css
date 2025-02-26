@@ -1,0 +1,20 @@
+.list-in-line
+{
+	list-style: none; /* Убираем маркеры (точки) */
+    padding: 0; /* Убираем внутренние отступы */
+    margin: 0; /* Убираем внешние отступы */
+}
+.list-in-line li
+{
+	display: inline;
+	padding: 20px;
+}
+.list-in-line i
+{
+	font-size:100px;
+	color: ;
+}
+.list-in-line i:hover
+{
+	color:black;
+}

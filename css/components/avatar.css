@@ -1,0 +1,28 @@
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Масштабируем изображение, сохраняя пропорции */
+  position: center;
+}
+.avatar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -80px;
+  position: relative;
+  z-index: 1;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.avatar-container .button {
+  margin-top: 20px;
+}
